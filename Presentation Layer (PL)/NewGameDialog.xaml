@@ -1,0 +1,23 @@
+﻿<Window x:Class="PL.NewGameDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PL"
+        mc:Ignorable="d"
+        Title="New Game" Height="160" Width="250"
+        WindowStyle="SingleBorderWindow" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel HorizontalAlignment="Center" Margin="20">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Width="45" Text="Players: " VerticalAlignment="Center" TextAlignment="Right"/>
+                <TextBox Name="tbPlayers" HorizontalAlignment="Left" Height="23" Text="1" VerticalContentAlignment="Center" Width="30" PreviewTextInput="NumberCheckTextBox"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Width="45" Text="Decks: " VerticalAlignment="Center" TextAlignment="Right"/>
+                <TextBox Name="tbDecks" HorizontalAlignment="Left" Height="23" Text="1" VerticalContentAlignment="Center" Width="30" PreviewTextInput="NumberCheckTextBox"/>
+            </StackPanel>
+            <Button Content="Start Game" Click="btnStartGame_Click" HorizontalAlignment="Center" Margin="0,15,0,0" VerticalAlignment="Top" Width="100"/>
+        </StackPanel>
+    </Grid>
+</Window>
